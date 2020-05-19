@@ -5,6 +5,7 @@ subhead: >
 description: >
   Learn how to measure memory usage of your web page in production to detect regressions.
 date: 2020-04-13
+updated: 2020-05-19
 authors:
   - ulan
 hero: hero.jpg
@@ -130,7 +131,7 @@ results for the same browser.
 ### Enabling support during the origin trial phase
 
 The `performance.measureMemory()` API is available as an origin trial in
-Chrome 83. The origin trial is expected to end in Chrome 84.
+Chrome 83. The origin trial is expected to end in Chrome 85.
 
 {% include 'content/origin-trials.njk' %}
 
