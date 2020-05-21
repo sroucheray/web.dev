@@ -947,6 +947,19 @@ const contributors = {
       name: 'Google',
     },
   },
+  jasonmiller: {
+    name: {
+      given: 'Jason',
+      family: 'Miller',
+    },
+    homepage: 'https://jasonformat.com/',
+    twitter: '_developit',
+    github: 'developit',
+    org: {
+      name: 'Google',
+      unit: 'Chrome',
+    },
+  },
   ulan: {
     name: {
       given: 'Ulan',
