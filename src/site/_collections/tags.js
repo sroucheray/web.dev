@@ -22,12 +22,13 @@ const {livePosts} = require('../_filters/live-posts');
  * Returns all tags with posts.
  *
  * @param {any} collections Eleventy collection object
- * @return {Array<{ title: string, key: string, description: string, href: string, url: string, data: { title: string, subhead: string }, elements: Array<object> }>} An array where each element is a paged tag with some meta data and n posts for the page.
+ * @return {TagsCollection} An array where each element is a paged tag with some meta data and n posts for the page.
  */
 module.exports = (collections) => {
+  /** @type TagsCollection */
   const tags = {};
 
-  Object.values(postTags).forEach((tag) => {
+  Object.values(postTags).forEach((/** @type Tag */ tag) => {
     // This updates the shared postTags object with meta information and is safe to be called multiple times.
     tag.url = path.join('/en', tag.href);
     tag.data = {

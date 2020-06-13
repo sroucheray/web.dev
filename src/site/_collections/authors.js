@@ -23,9 +23,10 @@ const setdefault = require('../_utils/setdefault');
  * Generate map the posts by author's username/key
  *
  * @param {Array<{ data: { authors: any[] }}>} posts
- * @return {Map<string, Array<Object>>} Map of posts by author's username/key
+ * @return {Map<string, Object[]>} Map of posts by author's username/key
  */
 const findAuthorsPosts = (posts) => {
+  /** @type Map<string, Object[]> */
   const authorsMap = new Map();
   posts.forEach((post) => {
     const authors = post.data.authors || [];
@@ -57,7 +58,7 @@ const findAuthorsImage = (key) => {
  * Returns all authors with their posts.
  *
  * @param {any} collections Eleventy collection object
- * @return {Object.<string, Author>}
+ * @return {AuthorsCollection}
  */
 module.exports = (collections) => {
   // Get all posts and sort them
@@ -68,12 +69,12 @@ module.exports = (collections) => {
 
   const authorsPosts = findAuthorsPosts(posts);
 
-  /** @constant @type {Object.<string, Author>} @default */
+  /** @type AuthorsCollection */
   const authors = {};
 
   Object.values(contributors)
     .sort((a, b) => a.title.localeCompare(b.title))
-    .forEach((author) => {
+    .forEach((/** @type Author */ author) => {
       // This updates the shared contributors object with meta information and is safe to be called multiple times.
       author.url = path.join('/en', author.href);
       author.data = {
@@ -82,7 +83,7 @@ module.exports = (collections) => {
       };
 
       author.elements = authorsPosts.has(author.key)
-        ? authorsPosts.get(author.key)
+        ? /** @type Object[] */ (authorsPosts.get(author.key))
         : [];
 
       // If the author doesn't have any posts, use their Twitter profile.

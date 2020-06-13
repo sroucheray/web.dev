@@ -110,8 +110,8 @@ const IMPACT_TO_SCORE_MAPPING = {
 };
 
 /**
- * @param {!CombinedAuditAndAuditRef} category
- * @return {!CombinedAuditAndAuditRef}
+ * @param {CombinedAuditAndAuditRef} category
+ * @return {CombinedAuditAndAuditRef}
  */
 export function computeWeightForAuditResult(category) {
   category.impact = CATEGORY_TO_IMPACT_MAPPING[category.ref.cat]({
@@ -124,7 +124,7 @@ export function computeWeightForAuditResult(category) {
 }
 
 /**
- * @param {!CombinedAuditAndAuditRef} category
+ * @param {CombinedAuditAndAuditRef} category
  * @return {boolean}
  */
 export function filterAuditResult(category) {

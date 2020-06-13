@@ -18,9 +18,9 @@ const constants = require('./constants');
 
 /**
  * Take array of elements and returns an array of paginated pages for the elements.
- * @param {Array<object>} elements Elements to paginate
+ * @param {Object[]} elements Elements to paginate
  * @param {AdditionalData} additionalData Aditional data that may be relevant to a page.
- * @return {Array<Paginated>} An array of items to display, including href and index.
+ * @return {Paginated[]} An array of items to display, including href and index.
  */
 module.exports = function addPagination(elements, additionalData = {}) {
   if (!Array.isArray(elements)) {
@@ -34,6 +34,7 @@ module.exports = function addPagination(elements, additionalData = {}) {
   }
 
   const pageCount = constants.PAGINATION_COUNT;
+  /** @type Paginated[] */
   const paginated = [];
   const pages = Math.ceil(elements.length / pageCount);
 

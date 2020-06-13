@@ -89,8 +89,8 @@ const renderAuthorNames = (pairs) => {
 /**
  * Render an authors card, including any number of authors and an optional date.
  *
- * @param {{authors: !Array<string>, date: ?Date, images: number}} arg
- * @param {Object.<string, Author>} [authorsCollection]
+ * @param {{authors?: Array<string>, date?: Date | null, images?: number}} arg
+ * @param {AuthorsCollection} [authorsCollection]
  * @return {string}
  */
 const renderAuthorsDate = (

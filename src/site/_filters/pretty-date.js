@@ -25,7 +25,7 @@ module.exports = (date) => {
   if (!date) {
     /* eslint-disable-next-line */
     console.warn('Date passed to prettyDate filter was undefined or null.');
-    return;
+    return '';
   }
 
   return DateTime.fromISO(date.toISOString(), {zone: 'utc'}).toLocaleString(

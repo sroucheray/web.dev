@@ -41,6 +41,9 @@ module.exports = (event, authorsCollection) => {
     }
   }
 
+  /**
+   * @param {{ speaker: string | string[], title: string }} param0
+   */
   const renderSession = ({speaker, title}) => {
     // Always pass an Array of author IDs.
     const authors = typeof speaker === 'string' ? [speaker] : speaker;

@@ -21,8 +21,8 @@ const srcsetRange = [240, 480, 768, 1045, 1434, 1730, 1959, 2195, 2880, 3200];
 /**
  * Take min and max values for an image and return all srcset sizes that fall
  * within that range.
- * @param {?number} min A minimum width.
- * @param {?number} max A maximum width.
+ * @param {number} [min] A minimum width.
+ * @param {number} [max] A maximum width.
  * @return {Array<number>} An array of srcset widths.
  */
 module.exports = function getSrcsetRange(min, max) {
