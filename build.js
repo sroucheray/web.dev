@@ -26,6 +26,7 @@ const rollupPluginPostCSS = require('rollup-plugin-postcss');
 const rollupPluginVirtual = require('rollup-plugin-virtual');
 const rollupPluginReplace = require('rollup-plugin-replace');
 const rollupPluginIstanbul = require('rollup-plugin-istanbul');
+const babel = require('rollup-plugin-babel');
 const OMT = require('@surma/rollup-plugin-off-main-thread');
 const rollup = require('rollup');
 const terser = isProd ? require('terser') : null;
@@ -69,6 +70,10 @@ function buildDefaultPlugins() {
       include: 'node_modules/**',
     }),
     rollupPluginVirtual(buildVirtualJSON(virtualImports)),
+    babel({
+      exclude: ['node_modules/**'],
+      plugins: ['@babel/plugin-proposal-optional-chaining'],
+    }),
   ];
 }
 
