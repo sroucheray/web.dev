@@ -4,7 +4,7 @@ module.exports = {
   slug: 'vitals',
   cover: '/vitals/web-vitals.svg',
   title: 'Web Vitals',
-  description: 'Essential metrics for a healthy site',
+  description: 'Overview of Web Vitals.',
   topics: [
     {
       title: 'Web Vitals',

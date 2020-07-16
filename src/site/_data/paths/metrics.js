@@ -4,7 +4,7 @@ module.exports = {
   slug: 'metrics',
   cover: '/images/collections/metrics.svg',
   title: 'Metrics',
-  description: 'Measure and optimize performance and user experience',
+  description: 'Measuring performance and user experience.',
   overview: `User-centric performance metrics are a critical tool in
     understanding and improving the experience of your site in a way that
     benefits real users.`,

@@ -5,7 +5,7 @@ module.exports = {
   cover: '/images/collections/fast.svg',
   title: 'Fast load times',
   updated: 'May 24, 2018',
-  description: 'Guarantee your site loads quickly to avoid user drop off.',
+  description: 'Techniques for improving site performance.',
   overview: `When you're building a modern web experience, it's important to
   measure, optimize, and monitor if you're to get fast and stay fast.
   Performance plays a significant role in the success of any online venture,
