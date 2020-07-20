@@ -11,6 +11,8 @@ description: |
   data, but it also prevents legitimate uses. What if you wanted to get weather
   data from another country? Enabling CORS lets the server tell the browser it's
   permitted to use an additional origin.
+tags:
+  - security
 ---
 
 The browser's same-origin policy blocks reading a resource from a different
@@ -212,5 +214,5 @@ Access-Control-Allow-Methods: GET, DELETE, HEAD, OPTIONS
 ```
 
 The server response can also include an `Access-Control-Max-Age` header to
-specify the duration to cache preflight results so the client does not need to
+specify the duration (in seconds) to cache preflight results so the client does not need to
 make a preflight request every time it sends a complex request.

@@ -4,7 +4,7 @@ subhead: Web apps can use the same system-provided share capabilities as native 
 authors:
   - joemedley
 date: 2019-11-08
-updated: 2020-05-12
+updated: 2020-07-20
 hero: hero.png
 alt: An illustration demonstrating that web apps can use the system-provided sharing UI.
 description: |
@@ -15,7 +15,6 @@ description: |
 tags:
   - blog
   - capabilities
-  - fugu
 ---
 
 With the Web Share API, web apps are able to use the same system-provided share

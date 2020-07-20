@@ -27,7 +27,7 @@ const addPagination = require('../../_utils/add-pagination');
 const feed = (items) => {
   const filteredFeed = [];
 
-  if (process.env.ELEVENTY_ENV === 'dev') {
+  if (process.env.ELEVENTY_ENV !== 'prod') {
     return filteredFeed;
   }
 
@@ -55,6 +55,8 @@ const index = (items, href, testItems) => {
   } else {
     itemsWithPosts = items.filter((item) => item.elements.length > 0);
   }
+
+  itemsWithPosts.sort((a, b) => a.title.localeCompare(b.title));
 
   return addPagination(itemsWithPosts, {href});
 };

@@ -5,12 +5,11 @@ authors:
   - thomassteiner
 description: The Shape Detection API detects faces, barcodes, and text in images.
 date: 2019-01-07
-updated: 2020-06-04
+updated: 2020-07-20
 tags:
   - blog
   - capabilities
-  - fugu
-  - origin-trial
+  - origin-trials
   - shape-detection
   - progressive-web-apps
   - webapp

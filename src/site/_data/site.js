@@ -30,7 +30,7 @@ module.exports = {
   thumbnail: '/images/social.png',
   isBannerEnabled: true,
   banner:
-    'Join us for web.dev LIVE, a digital event from June 30th to July 2nd to learn modern web techniques. More at [web.dev/live](/live/).',
+    'web.dev LIVE is now over! Head to [web.dev/live](/live/) to watch all the sessions, top Q&A and more.',
   // Note that the imageCdn value is only used when we do a production build
   // of the site. Otherwise all image paths are local. This means you can
   // develop locally without having to mess with the CDN at all.
@@ -71,5 +71,8 @@ module.exports = {
       messagingSenderId: '950800540990',
       appId: '1:950800540990:web:5bfeb5de58f8ce7ceef86f',
     },
+  },
+  maps: {
+    apiKey: 'AIzaSyCc27LkiT_ZvmEszthj__edZEzB7B7976s',
   },
 };

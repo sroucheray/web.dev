@@ -6,7 +6,7 @@ authors:
   - jeffposnick
   - joemedley
 date: 2019-11-10
-updated: 2020-03-13
+updated: 2020-07-20
 hero: hero.jpg
 alt: Colorful airplanes flying in sync
 origin_trial:
@@ -17,7 +17,6 @@ description: |
   of a native app.
 tags:
   - capabilities
-  - fugu
   - blog
   - progressive-web-apps
   - service-worker

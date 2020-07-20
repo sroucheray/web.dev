@@ -4,7 +4,7 @@ title: Service workers and the Cache Storage API
 authors:
   - jeffposnick
 date: 2018-11-05
-updated: 2020-02-27
+updated: 2020-07-20
 description: |
   The browser's HTTP cache is your first line of defense. It's not necessarily
   the most powerful or flexible approach, and you have limited control over the
@@ -135,6 +135,5 @@ to build a production-ready service worker. The next guide covers one such tool:
 [Workbox](https://developers.google.com/web/tools/workbox/).
 
 {% Aside 'success' %}
-Learn while having fun. Check out the new Service Workies game:
-[Release Preview out now](https://serviceworkies.mastery.games/).
+Learn while having fun. Check out the new [Service Workies game!](https://serviceworkies.com/).
 {% endAside %}

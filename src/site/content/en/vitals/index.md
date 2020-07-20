@@ -6,7 +6,7 @@ description: Essential metrics for a healthy site
 authors:
   - philipwalton
 date: 2020-04-30
-updated: 2020-06-05
+updated: 2020-07-20
 masthead: web-vitals.svg
 tags:
   - metrics
@@ -142,7 +142,7 @@ own real-user monitoring.
 
 #### Measure Core Web Vitals in JavaScript
 
-Each of the Core Web Vital can be measured in JavaScript using standard web
+Each of the Core Web Vitals can be measured in JavaScript using standard web
 APIs.
 
 The easiest way to measure all the Core Web Vitals is to use the

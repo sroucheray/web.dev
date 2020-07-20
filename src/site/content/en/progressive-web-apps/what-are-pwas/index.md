@@ -5,10 +5,12 @@ authors:
   - samrichard
   - petelepage
 date: 2020-01-06
-updated: 2020-02-24
+updated: 2020-07-20
 description: |
   An introduction to Progressive Web Apps (PWAs) and the three pillars that
   separate them from other web apps.
+tags:
+  - progressive-web-apps
 ---
 
 The web is an incredible platform. Its mix of ubiquity across devices and

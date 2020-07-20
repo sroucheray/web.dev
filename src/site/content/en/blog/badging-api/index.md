@@ -5,15 +5,13 @@ authors:
   - petelepage
 description: The Badging API allows installed web apps to set an application-wide badge, shown in an operating-system-specific place associated with the application, such as the shelf or home screen. Badging makes it easy to subtly notify the user that there is some new activity that might require their attention, or it can be used to indicate a small amount of information, such as an unread count.
 date: 2018-12-11
-updated: 2020-06-04
+updated: 2020-07-20
 tags:
   - blog
   - capabilities
-  - fugu
   - badging
   - progressive-web-apps
   - notifications
-  - origin-trial
 hero: hero.jpg
 alt: Phone showing several notification badges
 origin_trial:

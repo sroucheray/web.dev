@@ -5,11 +5,10 @@ authors:
   - thomassteiner
 description: Chrome 76 adds expands the functionality of the Async Clipboard API to add support for png images. Copying and pasting images to the clipboard has never been easier.
 date: 2019-07-03
-updated: 2020-06-04
+updated: 2020-07-20
 tags:
   - blog
   - capabilities
-  - fugu
   - chrome76
   - cutandcopy
   - execcommand

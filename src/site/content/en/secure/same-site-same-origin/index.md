@@ -4,11 +4,13 @@ title: Understanding "same-site" and "same-origin"
 authors:
   - agektmr
 date: 2020-04-15
-updated: 2020-06-10
+updated: 2020-07-20
 description: |
   "same-site" and "same-origin" are frequently cited but often misunderstood
   terms. This article helps you understand what they are and how they are
   different.
+tags:
+  - security
 ---
 
 "same-site" and "same-origin" are frequently cited but often misunderstood

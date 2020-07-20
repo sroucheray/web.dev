@@ -9,7 +9,7 @@ authors:
   - thomassteiner
   - phillipkriegel
 date: 2020-05-19
-updated: 2020-05-19
+updated: 2020-07-20
 hero: hero.jpg
 alt: Betty Crocker Cake Mix—Coffee Cinnamon.
 description: |
@@ -19,7 +19,6 @@ tags:
   - case-study
   - wake-lock
   - capabilities
-  - fugu
 ---
 For nearly a century, Betty Crocker has been America's source for modern cooking instruction
 and trusted recipe development.
